@@ -1,0 +1,17 @@
+.allcards{
+    width: 90%;
+    margin: auto;
+}
+.card{
+    margin: 20px;
+}
+.inputs{
+   display: flex;
+   width: 60%;
+   margin: auto;
+   flex-direction: column; 
+}
+input, select{
+    margin: 10px;
+    height: 40px;
+}

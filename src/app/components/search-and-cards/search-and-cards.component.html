@@ -1,6 +1,7 @@
 <app-navbar></app-navbar>
 <app-swiper></app-swiper>
 <div class="inputs">
+  <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif; text-align: center;">Search character</h2>
 <input type="text" [(ngModel)]="searchName" class="search" placeholder=" name" (input)="applyFilters()">
 <div class="selects">
 <select name="" id="" [(ngModel)]="searchGender" (ngModelChange)="applyFilters()">
@@ -22,12 +23,12 @@
 </select>
 </div>
 </div>
-<div class="allcards" style="display:flex; flex-wrap: wrap;">
+<div class="allcards" >
 <div class="card" style="width: 18rem;" *ngFor="let i of cardsArr">
     <img [src]="i.image" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{i.name}}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text"></p>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item"><strong>Status:</strong> {{i.status}}</li>
@@ -35,7 +36,7 @@
       <li class="list-group-item"><strong>Species:</strong> {{i.species}}</li>
     </ul>
     <div class="card-body">
-      <a 
+      <button 
       routerLink="/alter"
       [queryParams]="{
       name:i.name,
@@ -44,8 +45,8 @@
       species:i.species
       }" 
       (click)="alterEgoPage()"
-      class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+      class="card-link alterbtn">My Alter Egos</button>
+      
     </div>
   </div>
 </div>

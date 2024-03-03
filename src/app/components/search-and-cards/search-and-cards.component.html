@@ -28,7 +28,7 @@
     <img [src]="i.image" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{i.name}}</h5>
-      <p class="card-text"></p>
+      <p class="card-text"><strong>Location: </strong>{{i.location.name}}</p>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item"><strong>Status:</strong> {{i.status}}</li>
@@ -50,3 +50,4 @@
     </div>
   </div>
 </div>
+<app-madewith></app-madewith>

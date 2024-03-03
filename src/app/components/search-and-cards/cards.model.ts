@@ -5,6 +5,6 @@ export interface cards {
     gender:any,
     species:any,
     image:any,
-    
+    location:any
 
 }

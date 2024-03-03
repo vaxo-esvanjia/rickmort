@@ -1,0 +1,18 @@
+.copyright{
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    margin-top: 50px;
+    color: rgb(193, 193, 193);
+    font-size: 17px;
+    text-align: center;
+    background-color: rgba(11, 11, 11, 0.5);
+    
+}
+.copyright span {
+    color: #75dd19;
+}
+.copyright svg{
+    margin-top: -3px;
+}

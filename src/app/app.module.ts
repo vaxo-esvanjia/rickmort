@@ -9,7 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { CharacterInfoComponent } from './components/character-info/character-info.component';
-import { TestComponent } from './components/test/test.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { MadewithComponent } from './components/madewith/madewith.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { TestComponent } from './components/test/test.component';
   SwiperComponent,
   SearchAndCardsComponent,
   CharacterInfoComponent,
-  TestComponent
+  AboutusComponent,
+  MadewithComponent,
+  
   ],
   imports: [
     BrowserModule,

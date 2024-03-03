@@ -25,7 +25,7 @@ searchSpecies:string = 'Species'
     this.cardService.getCharacter().subscribe(cards => {
       this.cardsArr = cards.results;
       this.originalCardsArr = [...this.cardsArr]
-      // console.log(this.cardsArr)
+      console.log(this.cardsArr)
   });
   }
   applyFilters(): void {

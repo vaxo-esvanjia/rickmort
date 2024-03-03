@@ -24,7 +24,7 @@ export class CharacterInfoComponent implements OnInit {
    
         this.cardService.getCharacterAlters(this.name,this.status).subscribe((response:any)=>{
           this.alterEgos=response
-          console.log(this.alterEgos)
+          
         })
       })
       
